@@ -23,13 +23,13 @@ func partition(a []int, lo, hi int) (p int) {
 		swap(a, i, j)
 	}
 
-	swap(a, i, j)
+	swap(a, lo, j)
 
-	return
+	return j
 }
 
 func quickSort(a []int, lo, hi int) {
-	if lo == hi {
+	if lo >= hi {
 		return
 	}
 
